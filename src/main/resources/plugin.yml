@@ -1,0 +1,16 @@
+name: Gifts
+version: 0.1
+main: pl.panryba.mc.gifts.Plugin
+database: true
+depend: [Sets]
+commands:
+  prezent:
+    description: Odbiera wybrany prezent
+    usage: /<command> [nazwa prezentu]
+  gifts:
+    description: Zarzadzanie prezentami
+    usage: /<command> reload  
+    permission: gifts.manage
+permissions:
+  gifts.manage:
+    default: op
